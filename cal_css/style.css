@@ -1,0 +1,84 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+/* main container of the calculator */
+.wrapper {
+    width: 450px;
+    /* border: 1px solid rgb(32, 33, 56); */
+    margin: 10% auto;
+    padding: 0.5rem;
+    background-color: rgb(255, 211, 218);
+    border-radius: 8px;
+}
+
+.wrapper h1 {
+    font-size: 25px;
+    font-family: cursive;
+    
+}
+
+/* calculator monitor */
+.screen {
+    background-color: black;
+    color: lightgray;
+    text-align: right;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 12px;
+    margin-bottom: 0.3rem;
+    padding: 30px;
+    font-size: 25px;
+}
+
+/* row alignment */
+.but-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* all buttons */
+.cal-btn {
+    background-color: lightgray;
+    flex-basis: 24.5%;
+    height: 80px;
+    padding: 0.5rem 1rem;
+    margin-bottom: 0.3rem;
+    color: purple;
+    font-weight: bold;
+    border-radius: 12px;
+    font-size: 25px;
+}
+
+.cal-btn:hover{
+    background-color: rgb(155, 139, 139);
+    color: white;
+}
+
+/* buttons on the far right of the calculator */
+.cal-btn:last-child {
+    background-color: rgb(184, 160, 186);
+}
+
+.cal-btn:last-child:hover {
+    color: white;
+    background-color: rgb(126, 100, 128);
+}
+
+/* C button with double space */
+.double-btn {
+    flex-basis: 49.7%;
+}
+
+/* zero buttons with triple space */
+.triple-btn {
+    flex-basis: 74.8%;
+}
